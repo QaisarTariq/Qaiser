@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_TaskModelStoreContainer" CdmEntityContainer="DB_TaskEntities">
+    <EntitySetMapping Name="tbl_Task">
+      <EntityTypeMapping TypeName="DB_TaskModel.tbl_Task">
+        <MappingFragment StoreEntitySet="tbl_Task">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="strTitle" ColumnName="strTitle" />
+          <ScalarProperty Name="strDescripition" ColumnName="strDescripition" />
+          <ScalarProperty Name="dtDueDate" ColumnName="dtDueDate" />
+          <ScalarProperty Name="requiredHours" ColumnName="requiredHours" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

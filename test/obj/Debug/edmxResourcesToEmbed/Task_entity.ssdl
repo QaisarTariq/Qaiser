@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_TaskModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Task">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="strTitle" Type="varchar" MaxLength="500" />
+    <Property Name="strDescripition" Type="varchar" MaxLength="500" />
+    <Property Name="dtDueDate" Type="datetime" />
+    <Property Name="requiredHours" Type="int" Nullable="false" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityContainer Name="DB_TaskModelStoreContainer">
+    <EntitySet Name="tbl_Task" EntityType="Self.tbl_Task" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

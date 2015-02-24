@@ -1,0 +1,50 @@
+﻿@model Jawad_ahmed_Position_task.tbl_Task
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Task Details</legend>
+
+    <div class="display-label">
+        @Html.Label("Title")
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.strTitle)
+    </div>
+
+    <div class="display-label">
+        @Html.Label("Description")
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.strDescripition)
+    </div>
+
+    <div class="display-label">
+        @Html.Label("Due Date")
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.dtDueDate)
+    </div>
+
+    <div class="display-label">
+        @Html.Label("Required Hours")
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.requiredHours)
+    </div>
+
+    <div class="display-label">
+        @Html.Label("Priority")
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.priority)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
